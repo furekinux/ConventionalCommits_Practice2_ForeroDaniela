@@ -1,17 +1,19 @@
 html{
     color: #ffffff;
-    background: linear-gradient(#0033a0,#000c7a,#326cd8) no-repeat;
-    height:100%;
+    background: #0033a0;
     width: 100%;
 }
 
 
 .bigrectan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 70vi;
     height: 51.099vi;
     background-color: #ffffff;
-    border: 0.1vi solid #000000;
+    border: 0.1vi solid #326cd8;
     overflow:scroll;
     right: 2.5vi;
     top: 2.5vi;
@@ -69,7 +71,7 @@ nav svg{
     font-size: 1.1vi;
     position: absolute;
     top: 35.4vi;
-    left: 8vi;
+    left: 10vi;
     background-color: #ffffff;
     padding: 0.2vi;
     border-radius: 0.5vi;
@@ -77,4 +79,141 @@ nav svg{
 }
 .cart{
     top:17.6vi
+}
+
+.copy{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top:48vi;
+    position: absolute;
+    font-size: 1.5vi;
+    left: 0.5vi;
+}
+.copy-logo{
+    top:-0.5vi;
+    position: absolute;
+    width: 3vi;
+    left: 8vi;
+}
+
+.grid-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1vi;
+    column-gap: 1vi;
+    align-content: center;
+    margin-top: 27vi;
+    padding: 2vi;
+}
+
+.everysque{
+    border: 0.2vi solid #0033a0;
+    border-radius: 2vi;
+    width: 15vi;
+    display: flex;
+    justify-content: center;
+}
+
+
+img{
+    width: 10vi;
+}
+
+@media (max-width:430px) {
+    html,body{
+        color: #ffffff;
+        background: #0033a0;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+    
+    
+    .bigrectan{
+        position: absolute;
+        z-index: 1000;
+        width: 90vi;
+        height:100vi;
+        background-color: #ffffff;
+        border: 0.1vi solid #000000;
+        overflow:scroll;
+        margin-top: 23vi;
+        border-radius: 2.5vi;
+        left: 5vi;
+    }
+    
+    .title1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        z-index: 1000;
+        top: 10vi;
+        left: 8vi;
+        font-size: 5vi;
+    }
+    .classes{
+        display: none;
+    }
+
+    nav svg{
+        position: absolute;
+    }
+    
+    .produ-logo{
+        position: absolute;
+        top:3vi;
+        width: 4.5vi;
+        left: 4vi;
+    }
+    .abr-logo{
+        position: absolute;
+        top:2.4vi;
+        width: 5.5vi;
+        left: 24vi;
+    }
+    .cami-logo{
+        position: absolute;
+        top:2.6vi;
+        width: 6vi;
+        left: 43vi;
+    }
+    .pan-logo{
+        position: absolute;
+        top:3vi;
+        width: 4.5vi;
+        left: 64vi;
+    }
+    .car-logo{
+        position: absolute;
+        top:2.8vi;
+        width: 5vi;
+        left: 83vi;
+    }
+    .square3{
+        display: none;
+    }
+    .cart{
+        top:17.6vi
+    }
+    
+    .copy{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-top: 120vi;
+
+        font-size: 2vi;
+    }
+    .copy-logo{
+        top:-0.5vi;
+        position: absolute;
+        width: 3vi;
+        left: 8vi;
+    }
+    
+}
+
+.identify{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-column: 1/5;
+    color: #0033a0;
 }
